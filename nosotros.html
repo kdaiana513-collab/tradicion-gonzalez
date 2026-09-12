@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nosotros - Tradición González</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpsNsK0l73QCISXiRFlsFMQk7Jh0e21oCFKoDf68yrcQ&s");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    min-height:100vh;
+    padding:40px 0;
+
+}
+
+body::before{
+
+    content:"";
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.60);
+    z-index:-1;
+
+}
+
+.contenedor{
+
+    width:90%;
+    max-width:1000px;
+
+    margin:auto;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(12px);
+
+    padding:45px;
+
+    border-radius:25px;
+
+    color:white;
+
+    box-shadow:0 0 30px rgba(0,0,0,.5);
+
+}
+
+.titulo{
+
+    text-align:center;
+
+    color:#FFD27A;
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+.subtitulo{
+
+    text-align:center;
+
+    font-size:21px;
+
+    margin-bottom:35px;
+
+}
+
+.introduccion{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    text-align:justify;
+
+    margin-bottom:40px;
+
+}
+
+h2{
+
+    color:#FFD27A;
+
+    font-size:28px;
+
+    margin-bottom:20px;
+
+}
+
+.seccion{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+
+    margin:45px 0;
+
+    padding:25px;
+
+    background:rgba(0,0,0,.20);
+
+    border-radius:20px;
+
+}
+
+.seccion img{
+
+    width:400px;
+    height:500px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.4);
+
+}
+
+.texto{
+
+    flex:1;
+
+}
+
+.texto p{
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    text-align:justify;
+
+    margin-bottom:15px;
+
+}
+
+.proceso{
+
+    margin:40px 0;
+
+    padding:30px;
+
+    background:rgba(0,0,0,.20);
+
+    border-radius:20px;
+
+}
+
+.proceso p{
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    text-align:justify;
+
+    margin-bottom:15px;
+
+}
+
+/* IMAGEN DEL TERREMOTO */
+
+.terremoto-imagen{
+
+    width:100%;
+
+    max-width:600px;
+
+    height:350px;
+
+    object-fit:cover;
+
+    display:block;
+
+    margin:25px auto 30px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.5);
+
+}
+
+/* IMAGEN DE LA FAMILIA */
+
+.familia-imagen{
+
+    width:100%;
+
+    max-width:650px;
+
+    height:400px;
+
+    object-fit:cover;
+
+    display:block;
+
+    margin:25px auto 35px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.5);
+
+}
+
+.final{
+
+    text-align:center;
+
+    margin-top:40px;
+
+    padding:30px;
+
+}
+
+.final p{
+
+    font-size:20px;
+
+    line-height:1.8;
+
+}
+
+.frase{
+
+    color:#FFD27A;
+
+    font-size:28px !important;
+
+    font-weight:bold;
+
+    margin-top:20px;
+
+}
+
+.boton{
+
+    display:block;
+
+    width:max-content;
+
+    margin:30px auto 0;
+
+    padding:15px 30px;
+
+    background:#25D366;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    font-weight:bold;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.boton:hover{
+
+    background:#1EBE5D;
+
+    transform:scale(1.05);
+
+}
+
+
+/* PARA CELULARES */
+
+@media(max-width:700px){
+
+    .contenedor{
+
+        padding:25px;
+
+    }
+
+    .titulo{
+
+        font-size:32px;
+
+    }
+
+    .subtitulo{
+
+        font-size:18px;
+
+    }
+
+    .seccion{
+
+        flex-direction:column;
+
+    }
+
+    .seccion img{
+
+        width:100%;
+
+        height:300px;
+
+    }
+
+    .terremoto-imagen{
+
+        height:250px;
+
+    }
+
+    .familia-imagen{
+
+        height:250px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="contenedor">
+
+
+<h1 class="titulo">
+
+☕ TRADICIÓN GONZÁLEZ
+
+</h1>
+
+
+<p class="subtitulo">
+
+TRES GENERACIONES, UNA MISMA PASIÓN ❤️🌱
+
+</p>
+
+
+<div class="introduccion">
+
+<p>
+
+Hay historias que comienzan con una idea…
+
+Nuestra comenzó con una semilla. 🌱☕
+
+</p>
+
+<p>
+
+Tradición González nace en el corazón del departamento del Cauca, en el municipio de Popayán, en la Finca El Ciprés, ubicada en la vereda Julumito, a 1.760 metros sobre el nivel del mar.
+
+</p>
+
+<p>
+
+En estas tierras de clima templado cultivamos café de variedad Castillo, especie Arábica, reconocido por sus características especiales: cuerpo medio, acidez cítrica brillante y dulces notas que recuerdan la panela y el chocolate.
+
+</p>
+
+<p>
+
+Pero detrás de cada taza hay mucho más que café…
+
+</p>
+
+</div>
+
+
+
+<!-- PRIMERA GENERACIÓN -->
+
+<div class="seccion">
+
+<img src="primera-generacion.jpg" alt="Primera generación">
+
+<div class="texto">
+
+<h2>🌱 PRIMERA GENERACIÓN: DONDE TODO COMENZÓ</h2>
+
+<p>
+
+Nuestra historia se remonta al año 1945, cuando Ismael González y Leonor Vitonco formaron una humilde familia campesina.
+
+</p>
+
+<p>
+
+Con esfuerzo, dedicación y amor por la tierra, se dedicaron a la siembra, cosecha, poscosecha y comercialización de café pergamino seco, además del cultivo de otros productos agrícolas.
+
+</p>
+
+<p>
+
+Ellos fueron la semilla de esta gran historia.
+
+</p>
+
+<p>
+
+Sin imaginarlo, estaban construyendo las bases de un legado que, con el paso del tiempo, crecería y daría vida a lo que hoy conocemos como:
+
+</p>
+
+<p>
+
+<b>TRADICIÓN GONZÁLEZ ☕🌱</b>
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- SEGUNDA GENERACIÓN -->
+
+<div class="seccion">
+
+<img src="segunda-generacion.jpg" alt="Segunda generación">
+
+<div class="texto">
+
+<h2>🌿 SEGUNDA GENERACIÓN: EL LEGADO CONTINÚA</h2>
+
+<p>
+
+La herencia fue recibida por sus hijos, quienes decidieron conservar y continuar las actividades de sus padres.
+
+</p>
+
+<p>
+
+Entre ellos, José María González y María Agustina Ruiz, mis padres, quienes conforman la segunda generación de esta historia.
+
+</p>
+
+<p>
+
+En sus inicios se trasladaron a la ciudad y trabajaron como empleados dependientes. Con disciplina y sacrificio lograron ahorrar hasta adquirir su primer lote en la zona rural de Popayán.
+
+</p>
+
+<p>
+
+Y así, una vez más, la tierra volvió a llamarlos…
+
+</p>
+
+<p>
+
+Retomaron el legado familiar y continuaron con la siembra, cosecha y comercialización de café pergamino seco, además de otros productos agrícolas.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- TERREMOTO -->
+
+<div class="proceso">
+
+<h2>🏡 UN TERREMOTO QUE CAMBIÓ SUS VIDAS</h2>
+
+
+<!-- FOTO DEL TERREMOTO -->
+
+<img 
+src="terremoto.jpg" 
+class="terremoto-imagen" 
+alt="Terremoto de Popayán"
+>
+
+
+<p>
+
+En 1983, el terremoto que destruyó gran parte de Popayán cambió para siempre el rumbo de nuestra familia.
+
+</p>
+
+<p>
+
+En medio del caos, la incertidumbre y el miedo, tuvieron que refugiarse en cambuches en la zona rural. Tiempo después construyeron una sencilla casa de guadua.
+
+</p>
+
+<p>
+
+Y ocurrió algo inesperado…
+
+</p>
+
+<p>
+
+Ya no quisieron regresar a la ciudad.
+
+</p>
+
+<p>
+
+Decidieron quedarse en el campo, seguir cultivando café y construir allí su futuro.
+
+</p>
+
+<p>
+
+Junto con sus hermanos adquirieron otros lotes y cultivaron miles de semillas de café.
+
+</p>
+
+<p>
+
+El campo dejó de ser solamente un lugar donde vivían.
+
+<br>
+
+<b>Se convirtió en su vida. ❤️</b>
+
+</p>
+
+</div>
+
+
+
+<!-- CUANDO TODO PARECÍA PERDIDO -->
+
+<div class="proceso">
+
+<h2>🌧️ CUANDO TODO PARECÍA PERDIDO</h2>
+
+<p>
+
+Entre los años 2008 y 2010, los cultivos fueron afectados drásticamente por enfermedades.
+
+</p>
+
+<p>
+
+Fue una noticia devastadora para miles de caficultores del país.
+
+</p>
+
+<p>
+
+Pero nuestra familia no se rindió.
+
+</p>
+
+<p>
+
+Decidieron renovar completamente los cultivos con variedades más resistentes.
+
+</p>
+
+<p>
+
+Con el acompañamiento de la Federación Nacional de Cafeteros y sus ingenieros agrónomos, adoptaron nuevas técnicas para el lavado, secado y almacenamiento del café.
+
+</p>
+
+<p>
+
+El resultado fue un café de gran calidad, catalogado con un puntaje de 85, considerado un café excelente.
+
+</p>
+
+<p>
+
+<b>
+
+Las dificultades pueden destruir un cultivo… pero nunca deben destruir una tradición.
+
+</b>
+
+</p>
+
+</div>
+
+
+
+<!-- TERCERA GENERACIÓN -->
+
+<div class="seccion">
+
+<img src="tercera-generacion1.jpg" alt="Tercera generación">
+
+<div class="texto">
+
+<h2>☕ TERCERA GENERACIÓN: UNA NUEVA FORMA DE CONTINUAR EL LEGADO</h2>
+
+<p>
+
+En abril de 2026, la historia dio un nuevo giro.
+
+</p>
+
+<p>
+
+Como consecuencia de una situación que me llevó a buscar nuevos caminos y una fuente adicional de ingresos, decidí retomar el legado que durante generaciones había permanecido en nuestra familia.
+
+</p>
+
+<p>
+
+Soy Mile González, madre cabeza de hogar y parte de la tercera generación de esta historia.
+
+</p>
+
+<p>
+
+Y decidí llevar la tradición familiar un paso más adelante:
+
+</p>
+
+<p>
+
+<b>
+
+No solo cultivar café… sino llevar nuestra historia directamente hasta tu taza. ☕
+
+</b>
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- NUEVA ETAPA -->
+
+<div class="proceso">
+
+<h2>☕ UNA NUEVA ETAPA</h2>
+
+
+<!-- FOTO DE LA FAMILIA -->
+
+<img 
+src="familia.jpg" 
+class="familia-imagen" 
+alt="Familia Tradición González"
+>
+
+
+<p>
+
+Así nace esta nueva etapa de Tradición González, con la comercialización de café tostado en grano y molido.
+
+</p>
+
+<p>
+
+Nuestro café es procesado de manera artesanal y pasa por una tostión media alta, un punto de tueste intermedio-oscuro que busca un equilibrio especial entre la intensidad del tueste y la dulzura natural del café.
+
+</p>
+
+<p>
+
+Ofrecemos una molienda media, que permite extraer de manera equilibrada sus aromas, sabores y características especiales.
+
+</p>
+
+</div>
+
+
+
+<!-- FINAL -->
+
+<div class="final">
+
+<p>
+
+Cada empaque que llega a tus manos representa más de 80 años de historia familiar.
+
+</p>
+
+<p>
+
+Representa a nuestros abuelos trabajando la tierra.
+
+<br>
+
+Representa a nuestros padres reconstruyendo su vida después de un terremoto.
+
+<br>
+
+Representa cultivos perdidos, nuevas siembras y la fuerza para comenzar de nuevo.
+
+<br>
+
+Y representa una tercera generación que decidió que este legado no debía quedarse únicamente en la finca…
+
+</p>
+
+<p>
+
+<b>
+
+Debía llegar hasta tu taza. ☕❤️
+
+</b>
+
+</p>
+
+
+<p>
+
+Tradición González no es solo café.
+
+<br>
+
+Es familia.
+
+<br>
+
+Es tierra.
+
+<br>
+
+Es esfuerzo.
+
+<br>
+
+Es resistencia.
+
+<br>
+
+Es amor por el campo.
+
+<br>
+
+Es el trabajo de tres generaciones.
+
+</p>
+
+
+<p>
+
+🌱 Desde la Finca El Ciprés, en la vereda Julumito, Popayán, Cauca, a 1.760 m s. n. m., llevamos hasta ti una tradición que ha pasado de generación en generación.
+
+</p>
+
+
+<p class="frase">
+
+Porque en cada taza de café hay una historia.
+
+<br>
+
+Y nuestra historia se llama…
+
+<br><br>
+
+☕ TRADICIÓN GONZÁLEZ ❤️🌱
+
+</p>
+
+</div>
+
+
+
+<!-- BOTÓN VOLVER -->
+
+<a href="index.html" class="boton">
+
+⬅ Volver al inicio
+
+</a>
+
+
+</div>
+
+</body>
+
+</html>

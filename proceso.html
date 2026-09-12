@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Proceso - Tradición González</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpsNsK0l73QCISXiRFlsFMQk7Jh0e21oCFKoDf68yrcQ&s");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    min-height:100vh;
+
+    color:white;
+
+    position:relative;
+
+}
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.55);
+
+    z-index:-1;
+
+}
+
+
+/* CONTENEDOR */
+
+.contenedor{
+
+    width:92%;
+
+    max-width:1150px;
+
+    margin:40px auto;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(12px);
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 0 30px rgba(0,0,0,.5);
+
+    text-align:center;
+
+}
+
+
+/* ENCABEZADO */
+
+.encabezado{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+
+/* LOGO CIRCULAR */
+
+.logo-circular{
+
+    width:100px;
+
+    height:100px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:4px solid #FFD27A;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.5);
+
+}
+
+
+/* TITULOS */
+
+h1{
+
+    font-size:42px;
+
+    color:#FFD27A;
+
+}
+
+h2{
+
+    color:#d7b67a;
+
+    margin-top:8px;
+
+}
+
+.introduccion{
+
+    font-size:18px;
+
+    line-height:1.6;
+
+    margin:25px auto;
+
+    max-width:800px;
+
+}
+
+
+/* PROCESO */
+
+.proceso{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    margin-top:35px;
+
+}
+
+
+/* TARJETAS */
+
+.etapa{
+
+    background:rgba(255,255,255,.15);
+
+    padding:15px;
+
+    border-radius:18px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.4);
+
+    transition:.3s;
+
+}
+
+.etapa:hover{
+
+    transform:translateY(-8px);
+
+    background:rgba(255,255,255,.22);
+
+}
+
+
+/* FOTOS */
+
+.etapa img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    margin-bottom:15px;
+
+}
+
+
+/* TITULOS DE LAS ETAPAS */
+
+.etapa h3{
+
+    color:#FFD27A;
+
+    font-size:23px;
+
+    margin-bottom:10px;
+
+}
+
+
+/* TEXTO */
+
+.etapa p{
+
+    font-size:16px;
+
+    line-height:1.5;
+
+    margin:5px;
+
+}
+
+
+/* BOTÓN VOLVER */
+
+.volver{
+
+    display:inline-block;
+
+    margin-top:40px;
+
+    background:#8B5E3C;
+
+    padding:16px 30px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.volver:hover{
+
+    background:#6F452B;
+
+    transform:scale(1.05);
+
+}
+
+
+/* FOOTER */
+
+footer{
+
+    margin-top:30px;
+
+    color:#FFD27A;
+
+    font-size:20px;
+
+}
+
+
+/* TABLET */
+
+@media(max-width:900px){
+
+    .proceso{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
+
+
+/* CELULAR */
+
+@media(max-width:600px){
+
+    .contenedor{
+
+        padding:25px;
+
+    }
+
+    .encabezado{
+
+        gap:12px;
+
+    }
+
+    .logo-circular{
+
+        width:75px;
+
+        height:75px;
+
+    }
+
+    h1{
+
+        font-size:30px;
+
+    }
+
+    h2{
+
+        font-size:18px;
+
+    }
+
+    .proceso{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="contenedor">
+
+
+    <!-- ENCABEZADO -->
+
+    <div class="encabezado">
+
+        <img
+            src="logo.png"
+            class="logo-circular"
+            alt="Logo Tradición González"
+        >
+
+        <div>
+
+            <h1>Nuestro proceso</h1>
+
+            <h2>☕ De la planta hasta tu taza</h2>
+
+        </div>
+
+    </div>
+
+
+    <p class="introduccion">
+
+        En Tradición González cuidamos cada etapa
+        del proceso para conservar el aroma,
+        sabor y calidad de nuestro café colombiano.
+
+    </p>
+
+
+    <!-- LAS 5 ETAPAS -->
+
+    <div class="proceso">
+
+
+        <!-- COSECHA -->
+
+        <div class="etapa">
+
+            <img
+                src="cosecha.jpg"
+                alt="Cosecha del café"
+            >
+
+            <h3>🌱 La cosecha</h3>
+
+            <p>
+
+                Seleccionamos cuidadosamente los frutos
+                maduros del café para obtener granos
+                de la mejor calidad.
+
+            </p>
+
+        </div>
+
+
+        <!-- DESPULPADO -->
+
+        <div class="etapa">
+
+            <img
+                src="despulpado.jpg"
+                alt="Despulpado y lavado del café"
+            >
+
+            <h3>⚙️ Despulpado y lavado</h3>
+
+            <p>
+
+                Retiramos la pulpa del fruto y lavamos
+                cuidadosamente los granos para prepararlos
+                para el siguiente proceso.
+
+            </p>
+
+        </div>
+
+
+        <!-- SECADO -->
+
+        <div class="etapa">
+
+            <img
+                src="secado.jpg"
+                alt="Secado tradicional del café"
+            >
+
+            <h3>☀️ Secado tradicional</h3>
+
+            <p>
+
+                Secamos nuestro café de manera tradicional
+                en una parabólica, aprovechando el calor
+                natural del sol.
+
+            </p>
+
+        </div>
+
+
+        <!-- TOSTIÓN -->
+
+        <div class="etapa">
+
+            <img
+                src="tostion.jpg"
+                alt="Tostión del café"
+            >
+
+            <h3>🔥 Tostión</h3>
+
+            <p>
+
+                Tostamos cuidadosamente los granos
+                para desarrollar su aroma, sabor y
+                color característicos.
+
+            </p>
+
+        </div>
+
+
+        <!-- MOLIENDA -->
+
+        <div class="etapa">
+
+            <img
+                src="molienda.jpg"
+                alt="Molienda del café"
+            >
+
+            <h3>☕ Molienda</h3>
+
+            <p>
+
+                Molemos los granos tostados hasta obtener
+                el café listo para preparar y disfrutar.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- VOLVER -->
+
+    <a href="index.html" class="volver">
+
+        🏠 Volver al inicio
+
+    </a>
+
+
+    <footer>
+
+        ☕ Tradición González ☕
+
+    </footer>
+
+
+</div>
+
+
+</body>
+
+</html>
